@@ -78,8 +78,8 @@
               "pluginType": "DB",
               "jsonPathKeys": [
                 "competenceIdVariable.filterText",
-                "{ competence: {$regex: SelectCompetence.filterText, '$options' : 'i'} }",
-                "get_user.data[0]._id"
+                "get_user.data[0]._id",
+                "{ competence: {$regex: SelectCompetence.filterText, '$options' : 'i'} }"
               ],
               "timeoutInMillisecond": 10000
             },
@@ -89,9 +89,9 @@
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "{ competence: {$regex: competenceIdVariable.filterText, '$options' : 'i'} }",
                 "competenceIdVariable.filterText",
-                "get_user.data[0]._id"
+                "get_user.data[0]._id",
+                "{ competence: {$regex: competenceIdVariable.filterText, '$options' : 'i'} }"
               ],
               "timeoutInMillisecond": 10000
             }
